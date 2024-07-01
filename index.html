@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Personal Website</title>
+  <title>Alex Yang</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,10 +24,12 @@
         <div class="container column">
           <img src="assets/profile.png" class="img-float-right" id="profile-icon">
           <div class="row" id="head-links">
-              <a href="https://aletya.netlify.app/assets/AlexYangResume.pdf" class="links">Resume</a> |
-              <a href="https://github.com/aletya" target="_blank" class="links">Github</a> |
-              <a href="https://www.linkedin.com/in/aletya" target="_blank" class="links">LinkedIn</a> |
-              <a href="mailto:alexyang.swe@gmail.com" target="_blank" class="links">Email</a>
+              <strong>
+                <a href="https://aletya.netlify.app/assets/AlexYangResume.pdf" class="project-link">Resume</a> |
+                <a href="https://github.com/aletya" target="_blank" class="project-link">Github</a> |
+                <a href="https://www.linkedin.com/in/aletya" target="_blank" class="project-link">LinkedIn</a> |
+                <a href="mailto:alexyang.swe@gmail.com" target="_blank" class="project-link">Email</a>
+              </strong> 
           </div>
         </div>
       </div>
@@ -84,7 +86,7 @@
           <div class="resume-section">
             <div class="header">
               <div class="company-title">
-                <strong>Reflections Projections</strong> | <strong><a href="https://github.com/ReflectionsProjections/rp-api" target="_blank">Github</a></strong>
+                <strong>Reflections Projections</strong> | <strong><a href="https://github.com/ReflectionsProjections/rp-api" class="project-link" _blank">Github</a></strong>
               </div>
               <div class="location">
                 <em>Champaign, IL</em>
@@ -109,7 +111,7 @@
           <div class="resume-section">
             <div class="header">
               <div class="company-title">
-                <strong>HackIllinois</strong> | <strong><a href="https://github.com/HackIllinois/adonix/" target="_blank">Github</a></strong>
+                <strong>HackIllinois</strong> | <strong><a href="https://github.com/HackIllinois/adonix/"  class="project-link"  target="_blank">Github</a></strong>
               </div>
               <div class="location">
                 <em>Champaign, IL</em>
@@ -203,19 +205,60 @@
 
   <div class="blank-space"></div>
   
-  <section id="projects" class="section-offset">
+  <section id="projects" class="section-offset max-width">
     <h2>Projects</h2>
-    <p>This is the projects section.</p>
+    <div class="container row">
+      <div class="project-panel box-shadow">
+        <img src="assets/SeniorAssassins.png" alt="Project Image" style="height: 300px; display: block; margin: 0 auto; transform: scale(.6);">
+        <h3>Senior Assassins</h3>
+        <p><em>Javascript, React, ExpressJS, MongoDB</em></p>
+        <p>A full-stack application which facilitated a live action game with over 400 players.</p>
+        <p>
+          <a href="https://seniorassassins.netlify.app/" class="project-link" target="_blank">Demo</a> |
+          <a href="https://github.com/aletya/SeniorAssassinsFullstack" class="project-link" target="_blank">GitHub</a>
+        </p>
+      </div>
+      <div class="project-panel box-shadow">
+        <img src="assets/GroceryDealFinder.png" alt="Project Image" style="height: 300px; display: block; margin: 0 auto;">
+        <h3>Grocery Deal Finder</h3>
+        <p><em>Javascript, React, Next.js, Python, Flask</em></p>
+        <p>A grocery deal finder that scrapes the web for the best product deals based on user location.</p>
+        <p>
+          <a href="https://github.com/aletya/Grocery-Deal-Finder/tree/main" class="project-link" target="_blank">GitHub</a>
+        </p>
+      </div><div class="project-panel box-shadow">
+        <img src="assets/ChineseChess.png" alt="Project Image" style="height: 300px; display: block; margin: 0 auto; transform: scale(.5);">
+        <h3>AI Chinese Chess</h3>
+        <p><em>C++</em></p>
+        <p>A player vs computer, console-based version of Chinese Chess in C++.</p>
+        <p>
+          <a href="https://github.com/aletya/chinese-chess" class="project-link" target="_blank">GitHub</a>
+        </p>
+      </div>
+      <div class="project-panel box-shadow">
+        <img src="assets/Ecosystem.png" alt="Project Image" style="height: 300px; display: block; margin: 0 auto; transform: scale(.9);">
+        <h3>Ecosystem Simulation</h3>
+        <p><em>HTML/CSS, Javascript</em></p>
+        <p>A traditional simulation of foxes and rabbits to illustrate the interaction between predators and prey.</p>
+        <p>
+          <a href="https://shivumb.github.io/ecosystem/" class="project-link" target="_blank">Demo</a> |
+          <a href="https://github.com/ShivumB/ecosystem" class="project-link" target="_blank">GitHub</a>
+        </p>
+      </div>
+      <div class="project-panel box-shadow">
+        <img src="assets/PersonalWebsite.png" alt="Project Image" style="height: 300px; display: block; margin: 0 auto; transform: scale(.52);">
+        <h3>Personal Website</h3>
+        <p><em>HTML/CSS, Javascript</em></p>
+        <p> This website is written in pure HTML/CSS and Javascript.</p>
+      </div>
+      </div>
+    </div>
   </section>
 
+
   <footer class="container">
-    <ul>
-      <li><a href="#abosut">LinkedIn</a></li>
-      <li><a href="#expserience">Github</a></li>
-      <li><a href="#eduscation">Email</a></li>
-    </ul>
     <div>
-      <p>&copy; All Rights Reserved</p>
+      <p>&copy; 2024 All Rights Reserved</p>
     </div>
   </footer>
   

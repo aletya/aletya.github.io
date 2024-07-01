@@ -3,8 +3,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-	width: 100%;
-	height: 100%;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center; /* Center all content horizontally */
@@ -61,32 +61,10 @@ section {
 footer {
     background-color: #d3d3d3;
     display: flex;
-    /* left: 0%;
-	right: 0%; */
+    margin-top: 60px; /* Adjust the value as needed */
     padding: 1rem;
-    width: 100%;
-    height: 90px;
     box-sizing: border-box;
-}
-
-footer ul {
-    list-style: none;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    width: 100%; /* Ensure the ul stretches to fill the nav */  
-}
-
-footer ul li a {
-    color: #000000 ;
-    text-decoration: none;
-    display: inline-block;
-    margin: 0 1rem;
-}
-
-footer ul li a:hover {
-    text-decoration: underline;
+    width: 100%;
 }
 
 h2 {
@@ -300,18 +278,18 @@ $color-pink: #fe4365; */
     box-sizing: border-box;
   }
   
-  body {
+  /* body {
     padding: 30px;
-  }
+  } */
   
   .tabset {
     max-width: 65em;
   }
 
 
-  body {
+  /* body {
     font-family: Arial, sans-serif;
-  }
+  } */
   
   .resume-section {
     margin: 20px;
@@ -374,7 +352,7 @@ $color-pink: #fe4365; */
   margin-left: auto; 
   margin-right: 0;
   position: relative;
-  left: 60px;
+  left: 40px;
   font-size:large;
 }
 
@@ -391,4 +369,22 @@ $color-pink: #fe4365; */
 
 h1 {
   font-size: 40px;
+}
+
+.project-panel {
+  padding: 20px;
+  margin: 40px;
+  height: 600px;
+  width: 400px;
+  border-top: 1px solid #ccc;
+}
+
+.project-link {
+  color: #007bff; /* Blue color for links */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.project-link:hover {
+  color: #0056b3; /* Darker blue on hover */
 }
