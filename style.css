@@ -166,7 +166,6 @@ $color-pink: #fe4365; */
   border-radius: 11px;
   position: relative;
   box-shadow: 20px 20px #00008B;
-  font-family: "Baloo 2", cursive;
   display: inline-block;
    /* border: 1px solid $color-green;  */
 }
