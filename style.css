@@ -54,6 +54,12 @@ nav ul li a:hover {
   top: -70px;
 }
 
+@media (max-width: 600px) {
+  nav ul li a {
+    font-size: 12px;
+  }
+}
+
 section {
   text-align: center; /* Center text within each section */
 }
