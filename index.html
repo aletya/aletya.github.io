@@ -1,268 +1,444 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alex Yang</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <nav id="navbar">
-    <ul>
-      <li><a href="#head">Alex Yang</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#projects">Projects</a></li>
-    </ul>
-  </nav>
-  
-  
-  <section id="head" class="max-width">
-    <h1>Alex Yang</h1>
-    <div class="container row max-width">
-      <div class="half-width">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alex Yang</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <ul>
+        <li><a href="#head">Alex Yang</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </nav>
+
+    <section id="head" class="max-width">
+      <div class="container column max-width">
         <div class="container column">
-          <img src="assets/profile.png" class="img-float-right" id="profile-icon">
+          <h1>Alex Yang</h1>
           <div class="row" id="head-links">
-              <strong>
-                <a href="https://aletya.netlify.app/assets/AlexYangResume.pdf" class="project-link">Resume</a> |
-                <a href="https://github.com/aletya" target="_blank" class="project-link">Github</a> |
-                <a href="https://www.linkedin.com/in/aletya" target="_blank" class="project-link">LinkedIn</a> |
-                <a href="mailto:alexyang.swe@gmail.com" target="_blank" class="project-link">Email</a>
-              </strong> 
+            <strong>
+              <a
+                href="https://aletya.netlify.app/assets/AlexYangResume.pdf"
+                class="project-link"
+                >Resume</a
+              >
+              |
+              <a
+                href="https://github.com/aletya"
+                target="_blank"
+                class="project-link"
+                >Github</a
+              >
+              |
+              <a
+                href="https://www.linkedin.com/in/aletya"
+                target="_blank"
+                class="project-link"
+                >LinkedIn</a
+              >
+              |
+              <a
+                href="mailto:alexyang.swe@gmail.com"
+                target="_blank"
+                class="project-link"
+                >Email</a
+              >
+            </strong>
           </div>
         </div>
-      </div>
-      <div class="half-width align-left">
-        <div class="max-width-half">
-          <p class="speech-bubble-text" id="typewritter"> </p>
+        <div class="container column seventy-width">
+          <div class="container row max-width">
+            <div class="container half-width" style="min-width: 400px">
+              <img
+                src="assets/profile.png"
+                class="img-float-right"
+                id="profile-icon"
+              />
+            </div>
+            <div class="container half-width" style="min-width: 400px">
+              <p class="speech-bubble-text" id="typewritter"></p>
+            </div>
+          </div>
+          <div class="blank-space"></div>
+          <a href="#experience" class="arrow down"></a>
         </div>
-      </div>
-    </div>
-    <a  href="#experience" class="arrow down"></a>
-  </section>
-  
-  <div class="blank-space"></div>
-  
-  <section id="experience" class="section-offset">
-    <h2>Experience</h2>
-    <div class="tabset border">
-      <input type="radio" name="tabset" id="tab1" aria-controls="marzen" checked>
-      <label for="tab1">Capital One</label>
-      <input type="radio" name="tabset" id="tab2" aria-controls="rauchbier">
-      <label for="tab2">Reflections | Projections</label>
-      <input type="radio" name="tabset" id="tab3" aria-controls="dunkles">
-      <label for="tab3">HackIllinois</label>
-      <input type="radio" name="tabset" id="tab4" aria-controls="yur">
-      <label for="tab4">CoderDojo</label>
-      
-      <div class="tab-panels box-shadow">
-        <section id="marzen" class="tab-panel">
-          <div class="resume-section">
-            <div class="header">
-              <div class="company-title">
-                <strong>Capital One</strong>
-              </div>
-              <div class="location">
-                <em>McLean, VA</em>
-              </div>
-            </div>
-            <div class="role-duration">
-              <div class="role">
-                <em>Software Engineer Intern</em>
-              </div>
-              <div class="duration">
-                <em>Jun 2024 - Aug 2024</em>
-              </div>
-            </div>
-            <ul class="responsibilities">
-              <li>Implemented a robust data processing pipeline using Python-based <strong>AWS Lambda</strong> functions to stream data from <strong>S3</strong> to <strong>DynamoDB</strong>, enabling efficient processing and storage of large files without overwhelming the system</li>
-              <li>Engineered a data synchronization and visualization framework utilizing <strong>DynamoDB</strong> and <strong>OpenSearch</strong>, providing rich visualizations and dashboard for data analysts</li>
-              <li>Engineered a comprehensive UI with SSO access management, file uploads, complex requests, and auditing capabilities</li>
-            </ul>
-          </div>
-      </section>
-        <section id="rauchbier" class="tab-panel">
-          <div class="resume-section">
-            <div class="header">
-              <div class="company-title">
-                <strong>Reflections Projections</strong> | <strong><a href="https://github.com/ReflectionsProjections/rp-api" class="project-link" _blank">Github</a></strong>
-              </div>
-              <div class="location">
-                <em>Champaign, IL</em>
-              </div>
-            </div>
-            <div class="role-duration">
-              <div class="role">
-                <em>Software Engineer (API / Core)</em>
-              </div>
-              <div class="duration">
-                <em>Feb 2024 - current</em>
-              </div>
-            </div>
-            <ul class="responsibilities">
-              <li>Deployed API servers on <strong>EC2</strong> with <strong>ZERO</strong> downtime during updates by implementing a blue-green deployment strategy</li>
-              <li>Developed robust CI/CD pipelines for the API using <strong>Code Deploy</strong>, <strong>Code Pipeline</strong>, and <strong>Github Actions</strong></li>
-              <li>Achieved <strong>96.55%</strong> branch coverage, ensuring reliable, seamless CI/CD by developing a testing framework using Jest</li>
-            </ul>
-          </div>
-        </section>
-        <section id="dunkles" class="tab-panel">
-          <div class="resume-section">
-            <div class="header">
-              <div class="company-title">
-                <strong>HackIllinois</strong> | <strong><a href="https://github.com/HackIllinois/adonix/"  class="project-link"  target="_blank">Github</a></strong>
-              </div>
-              <div class="location">
-                <em>Champaign, IL</em>
-              </div>
-            </div>
-            <div class="role-duration">
-              <div class="role">
-                <em>Software Engineer (API)</em>
-              </div>
-              <div class="duration">
-                <em>Sep 2023 - Feb 2024</em>
-              </div>
-            </div>
-            <ul class="responsibilities">
-              <li>Redesigned API endpoints used by 900+ users/staff in UIUC’s signature hackathon using Express.js and Node.js</li>
-              <li>Reduced costs by <strong>98.5%</strong> by redesigning database schemas, building CI/CD pipelines, and streamlining internal test suites</li>
-              <li>Achieved a <strong>99% </strong>reduction in bandwidth usage for storing/viewing applicants' resumes by developing a service to facilitate user-specific uploads/downloads to <strong>S3</strong></li>
-            </ul>
-          </div>
-        </section>
-        <section id="yur" class="tab-panel">
-          <div class="resume-section">
-            <div class="header">
-              <div class="company-title">
-                <strong>CoderDojo</strong>
-              </div>
-              <div class="location">
-                <em>Hinsdale, IL</em>
-              </div>
-            </div>
-            <div class="role-duration">
-              <div class="role">
-                <em>Lead Computer Science Instructor</em>
-              </div>
-              <div class="duration">
-                <em>Mar 2022 - Apr 2023</em>
-              </div>
-            </div>
-            <ul class="responsibilities">
-              <li>Taught students the fundamentals of programming, problem solving, and algorithm design</li>
-              <li>Guided students in building their own applications/projects using Scratch and Python</li>
-            </ul>
-          </div>
-        </section>
-      </div>
-    </div>
-  </section>
-
-  <div class="blank-space"></div>
-
-  <section id="education" class="section-offset">
-    <h2>Education</h2>
-    <section id="yur" class="tab-panel box-shadow">
-      <div class="resume-section">
-        <div class="header">
-          <div class="company-title">
-            <strong>University of Illinois Urbana-Champaign</strong>
-          </div>
-        </div>
-        <div class="degree-title">
-          <strong>B.S. - Computer Science</strong>
-        </div>
-        <div class="role-duration">
-          <div class="role">
-            <em>Expected Graduation: May 2026</em>
-          </div>
-          <div class="duration">
-            <em>GPA 4.0/4.0</em>
-          </div>
-        </div>
-        <div class="blank-space-40"></div>
-        <div class="align-left">
-          Relevant Coursework:
-        </div>
-        <ul class="responsibilities">
-          <li>Algorithms & Models of Computation (in progress)</li>
-          <li>Distributed Systems (in progress)</li>
-          <li>Database Systems (in progress)</li>
-          <li>Data Structures and Algorithms (A)</li>
-          <li>System Programming (A+)</li>
-          <li>Computer Architecture (A)</li>
-          <li>Software Design Lab (A)</li>
-          <li>Probability & Statistics for CS (A+)</li>
-          <li>Combinatorics (A+)</li>
-          <li>Abstract Linear Algebra (A+)</li>
-          <li>Discrete Structures (A+)</li>
-        </ul>
       </div>
     </section>
-  </section>
 
-  <div class="blank-space"></div>
-  
-  <section id="projects" class="section-offset max-width">
-    <h2>Projects</h2>
-    <div class="container row">
-      <div class="project-panel box-shadow">
-        <img src="assets/SeniorAssassins.png" alt="Project Image" style="height: 300px; display: block; margin: 0 auto; transform: scale(.6);">
-        <h3>Senior Assassins</h3>
-        <p><em>Javascript, React, ExpressJS, MongoDB</em></p>
-        <p>A full-stack application which facilitated a live action game with over 400 players.</p>
-        <p>
-          <a href="https://seniorassassins.netlify.app/" class="project-link" target="_blank">Demo</a> |
-          <a href="https://github.com/aletya/SeniorAssassinsFullstack" class="project-link" target="_blank">GitHub</a>
-        </p>
-      </div>
-      <div class="project-panel box-shadow">
-        <img src="assets/GroceryDealFinder.png" alt="Project Image" style="height: 300px; display: block; margin: 0 auto;">
-        <h3>Grocery Deal Finder</h3>
-        <p><em>Javascript, React, Next.js, Python, Flask</em></p>
-        <p>A grocery deal finder that scrapes the web for the best product deals based on user location.</p>
-        <p>
-          <a href="https://github.com/aletya/Grocery-Deal-Finder/tree/main" class="project-link" target="_blank">GitHub</a>
-        </p>
-      </div><div class="project-panel box-shadow">
-        <img src="assets/ChineseChess.png" alt="Project Image" style="height: 300px; display: block; margin: 0 auto; transform: scale(.5);">
-        <h3>AI Chinese Chess</h3>
-        <p><em>C++</em></p>
-        <p>A player vs computer, console-based version of Chinese Chess in C++.</p>
-        <p>
-          <a href="https://github.com/aletya/chinese-chess" class="project-link" target="_blank">GitHub</a>
-        </p>
-      </div>
-      <div class="project-panel box-shadow">
-        <img src="assets/Ecosystem.png" alt="Project Image" style="height: 300px; display: block; margin: 0 auto; transform: scale(.9);">
-        <h3>Ecosystem Simulation</h3>
-        <p><em>HTML/CSS, Javascript</em></p>
-        <p>A traditional simulation of foxes and rabbits to illustrate the interaction between predators and prey.</p>
-        <p>
-          <a href="https://shivumb.github.io/ecosystem/" class="project-link" target="_blank">Demo</a> |
-          <a href="https://github.com/ShivumB/ecosystem" class="project-link" target="_blank">GitHub</a>
-        </p>
-      </div>
-      <div class="project-panel box-shadow">
-        <img src="assets/PersonalWebsite.png" alt="Project Image" style="height: 300px; display: block; margin: 0 auto; transform: scale(.52);">
-        <h3>Personal Website</h3>
-        <p><em>HTML/CSS, Javascript</em></p>
-        <p> This website is written in pure HTML/CSS and Javascript.</p>
-      </div>
-      </div>
-    </div>
-  </section>
+    <div class="blank-space"></div>
 
+    <section id="experience" class="section-offset container column max-width">
+      <h2>Experience</h2>
+      <div class="tabset border">
+        <input
+          type="radio"
+          name="tabset"
+          id="tab1"
+          aria-controls="marzen"
+          checked
+        />
+        <label for="tab1">Capital One</label>
+        <input type="radio" name="tabset" id="tab2" aria-controls="rauchbier" />
+        <label for="tab2">Reflections | Projections</label>
+        <input type="radio" name="tabset" id="tab3" aria-controls="dunkles" />
+        <label for="tab3">HackIllinois</label>
+        <input type="radio" name="tabset" id="tab4" aria-controls="yur" />
+        <label for="tab4">CoderDojo</label>
 
-  <footer class="container">
-    <div>
-      <p>&copy; 2024 All Rights Reserved</p>
-    </div>
-  </footer>
-  
-  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-  <script src="./assets/scripts.js"></script>
-</body>
+        <div class="tab-panels box-shadow">
+          <section id="marzen" class="tab-panel">
+            <div class="resume-section">
+              <div class="header">
+                <div class="company-title">
+                  <strong>Capital One</strong>
+                </div>
+                <div class="location">
+                  <em>McLean, VA</em>
+                </div>
+              </div>
+              <div class="role-duration">
+                <div class="role">
+                  <em>Software Engineer Intern</em>
+                </div>
+                <div class="duration">
+                  <em>Jun 2024 - Aug 2024</em>
+                </div>
+              </div>
+              <ul class="responsibilities">
+                <li>
+                  Implemented a robust data processing pipeline using
+                  Python-based <strong>AWS Lambda</strong> functions to stream
+                  data from <strong>S3</strong> to <strong>DynamoDB</strong>,
+                  enabling efficient processing and storage of large files
+                  without overwhelming the system
+                </li>
+                <li>
+                  Engineered a data synchronization and visualization framework
+                  utilizing <strong>DynamoDB</strong> and
+                  <strong>OpenSearch</strong>, providing rich visualizations and
+                  dashboard for data analysts
+                </li>
+                <li>
+                  Engineered a comprehensive UI with SSO access management, file
+                  uploads, complex requests, and auditing capabilities
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section id="rauchbier" class="tab-panel">
+            <div class="resume-section">
+              <div class="header">
+                <div class="company-title">
+                  <strong>Reflections Projections</strong> |
+                  <strong
+                    ><a
+                      href="https://github.com/ReflectionsProjections/rp-api"
+                      class="project-link"
+                      target="_blank"
+                      >Github</a
+                    ></strong
+                  >
+                </div>
+                <div class="location">
+                  <em>Champaign, IL</em>
+                </div>
+              </div>
+              <div class="role-duration">
+                <div class="role">
+                  <em>Software Engineer (API / Core)</em>
+                </div>
+                <div class="duration">
+                  <em>Feb 2024 - current</em>
+                </div>
+              </div>
+              <ul class="responsibilities">
+                <li>
+                  Deployed API servers on <strong>EC2</strong> with
+                  <strong>ZERO</strong> downtime during updates by implementing
+                  a blue-green deployment strategy
+                </li>
+                <li>
+                  Developed robust CI/CD pipelines for the API using
+                  <strong>Code Deploy</strong>, <strong>Code Pipeline</strong>,
+                  and <strong>Github Actions</strong>
+                </li>
+                <li>
+                  Achieved <strong>96.55%</strong> branch coverage, ensuring
+                  reliable, seamless CI/CD by developing a testing framework
+                  using Jest
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section id="dunkles" class="tab-panel">
+            <div class="resume-section">
+              <div class="header">
+                <div class="company-title">
+                  <strong>HackIllinois</strong> |
+                  <strong
+                    ><a
+                      href="https://github.com/HackIllinois/adonix/"
+                      class="project-link"
+                      target="_blank"
+                      >Github</a
+                    ></strong
+                  >
+                </div>
+                <div class="location">
+                  <em>Champaign, IL</em>
+                </div>
+              </div>
+              <div class="role-duration">
+                <div class="role">
+                  <em>Software Engineer (API)</em>
+                </div>
+                <div class="duration">
+                  <em>Sep 2023 - Feb 2024</em>
+                </div>
+              </div>
+              <ul class="responsibilities">
+                <li>
+                  Redesigned API endpoints used by 900+ users/staff in UIUC’s
+                  signature hackathon using Express.js and Node.js
+                </li>
+                <li>
+                  Reduced costs by <strong>98.5%</strong> by redesigning
+                  database schemas, building CI/CD pipelines, and streamlining
+                  internal test suites
+                </li>
+                <li>
+                  Achieved a <strong>99% </strong>reduction in bandwidth usage
+                  for storing/viewing applicants' resumes by developing a
+                  service to facilitate user-specific uploads/downloads to
+                  <strong>S3</strong>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section id="yur" class="tab-panel">
+            <div class="resume-section">
+              <div class="header">
+                <div class="company-title">
+                  <strong>CoderDojo</strong>
+                </div>
+                <div class="location">
+                  <em>Hinsdale, IL</em>
+                </div>
+              </div>
+              <div class="role-duration">
+                <div class="role">
+                  <em>Lead Computer Science Instructor</em>
+                </div>
+                <div class="duration">
+                  <em>Mar 2022 - Apr 2023</em>
+                </div>
+              </div>
+              <ul class="responsibilities">
+                <li>
+                  Taught students the fundamentals of programming, problem
+                  solving, and algorithm design
+                </li>
+                <li>
+                  Guided students in building their own applications/projects
+                  using Scratch and Python
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <div class="blank-space"></div>
+
+    <section id="education" class="section-offset container column max-width">
+      <h2>Education</h2>
+      <div class="container row">
+        <div id="yur" class="tab-panel box-shadow">
+          <div class="resume-section">
+            <div class="header">
+              <div class="company-title">
+                <strong>University of Illinois Urbana-Champaign</strong>
+              </div>
+            </div>
+            <div class="degree-title">
+              <strong>B.S. - Computer Science</strong>
+            </div>
+            <div class="role-duration">
+              <div class="role">
+                <em>Expected Graduation: May 2026</em>
+              </div>
+              <div class="duration">
+                <em>GPA 4.0/4.0</em>
+              </div>
+            </div>
+            <div class="blank-space-40"></div>
+            <div class="align-left">Relevant Coursework:</div>
+            <ul class="responsibilities">
+              <li>Algorithms & Models of Computation (in progress)</li>
+              <li>Distributed Systems (in progress)</li>
+              <li>Database Systems (in progress)</li>
+              <li>Data Structures and Algorithms (A)</li>
+              <li>System Programming (A+)</li>
+              <li>Computer Architecture (A)</li>
+              <li>Software Design Lab (A)</li>
+              <li>Probability & Statistics for CS (A+)</li>
+              <li>Combinatorics (A+)</li>
+              <li>Abstract Linear Algebra (A+)</li>
+              <li>Discrete Structures (A+)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="blank-space"></div>
+
+    <section id="projects" class="section-offset max-width container column">
+      <h2>Projects</h2>
+      <div class="container row">
+        <div class="project-panel box-shadow">
+          <img
+            src="assets/SeniorAssassins.png"
+            alt="Project Image"
+            style="
+              height: 300px;
+              display: block;
+              margin: 0 auto;
+              transform: scale(0.6);
+            "
+          />
+          <h3>Senior Assassins</h3>
+          <p><em>JavaScript, React, ExpressJS, MongoDB</em></p>
+          <p>
+            A full-stack application which facilitated a live action game with
+            over 400 players.
+          </p>
+          <p>
+            <a
+              href="https://seniorassassins.netlify.app/"
+              class="project-link"
+              target="_blank"
+              >Demo</a
+            >
+            |
+            <a
+              href="https://github.com/aletya/SeniorAssassinsFullstack"
+              class="project-link"
+              target="_blank"
+              >GitHub</a
+            >
+          </p>
+        </div>
+        <div class="project-panel box-shadow">
+          <img
+            src="assets/GroceryDealFinder.png"
+            alt="Project Image"
+            style="height: 300px; display: block; margin: 0 auto"
+          />
+          <h3>Grocery Deal Finder</h3>
+          <p><em>JavaScript, React, Next.js, Python, Flask</em></p>
+          <p>
+            A grocery deal finder that scrapes the web for the best product
+            deals based on user location.
+          </p>
+          <p>
+            <a
+              href="https://github.com/aletya/Grocery-Deal-Finder/tree/main"
+              class="project-link"
+              target="_blank"
+              >GitHub</a
+            >
+          </p>
+        </div>
+        <div class="project-panel box-shadow">
+          <img
+            src="assets/ChineseChess.png"
+            alt="Project Image"
+            style="
+              height: 300px;
+              display: block;
+              margin: 0 auto;
+              transform: scale(0.5);
+            "
+          />
+          <h3>AI Chinese Chess</h3>
+          <p><em>C++</em></p>
+          <p>
+            A player vs computer, console-based version of Chinese Chess in C++.
+          </p>
+          <p>
+            <a
+              href="https://github.com/aletya/chinese-chess"
+              class="project-link"
+              target="_blank"
+              >GitHub</a
+            >
+          </p>
+        </div>
+        <div class="project-panel box-shadow">
+          <img
+            src="assets/Ecosystem.png"
+            alt="Project Image"
+            style="
+              height: 300px;
+              display: block;
+              margin: 0 auto;
+              transform: scale(0.9);
+            "
+          />
+          <h3>Ecosystem Simulation</h3>
+          <p><em>HTML/CSS, JavaScript</em></p>
+          <p>
+            A traditional simulation of foxes and rabbits to illustrate the
+            interaction between predators and prey.
+          </p>
+          <p>
+            <a
+              href="https://shivumb.github.io/ecosystem/"
+              class="project-link"
+              target="_blank"
+              >Demo</a
+            >
+            |
+            <a
+              href="https://github.com/ShivumB/ecosystem"
+              class="project-link"
+              target="_blank"
+              >GitHub</a
+            >
+          </p>
+        </div>
+        <div class="project-panel box-shadow">
+          <img
+            src="assets/PersonalWebsite.png"
+            alt="Project Image"
+            style="
+              height: 300px;
+              display: block;
+              margin: 0 auto;
+              transform: scale(0.52);
+            "
+          />
+          <h3>Personal Website</h3>
+          <p><em>HTML/CSS, JavaScript</em></p>
+          <p>This website is written in pure HTML/CSS and JavaScript.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="container max-width">
+      <div>
+        <p>&copy; 2024 All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="./assets/scripts.js"></script>
+  </body>
 </html>
