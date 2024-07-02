@@ -110,6 +110,7 @@ h2 {
 #profile-icon {
   width: 400px; /* Desired width of the cropped image */
   height: 400px; /* Desired height of the cropped image */
+  max-width: 100%;
   object-fit: cover; /* Maintain aspect ratio and cover the entire container */
   clip-path: inset(2px);
   display: block;
@@ -380,4 +381,10 @@ h1 {
 
 .seventy-width {
   width: 70%;
+}
+
+
+.margin-40 {
+  margin-left: 40px;
+  margin-right: 40px;
 }
