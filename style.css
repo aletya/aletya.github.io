@@ -347,8 +347,7 @@ input:focus-visible + label {
 }
 
 #head-links {
-  margin-left: auto;
-  margin-right: 0;
+  width: 100%;
   position: relative;
   font-size: large;
 }
@@ -382,6 +381,7 @@ h1 {
   margin: 40px;
   width: 100%; /* Initially set width to 100% */
   max-width: 400px; /* Set max width to 400px */
+  aspect-ratio: 530 / 400; /* Maintain the aspect ratio */
   border-top: 1px solid #ccc;
   box-sizing: border-box; /* Include padding in the element's total width */
 }

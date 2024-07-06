@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alex Yang</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="google-site-verification" content="WpXclVcD_gnl1HsxdRvgYEP9D2H7sx_08jBqGa9ULl8" />
   </head>
   <body>
@@ -19,36 +20,25 @@
 
     <section id="head" class="max-width">
       <div class="container column max-width">
-        <div class="container column">
-          <h1>Alex Yang</h1>
+        <div class="container column max-width">
+          <h1 class = "max-width">Alex Yang</h1>
           <div class="row" id="head-links">
             <strong>
-              <a
-                href="https://aletya.netlify.app/assets/AlexYangResume.pdf"
-                class="project-link"
-                >Resume</a
-              >
+              <a href="https://aletya.github.io/assets/AlexYangResume.pdf" class="project-link" style="color: black;">
+                Resume
+              </a>
               |
-              <a
-                href="https://github.com/aletya"
-                target="_blank"
-                class="project-link"
-                >Github</a
-              >
+              <a href="https://github.com/aletya" target="_blank" class="project-link">
+                <i class="fa fa-github fa-lg" style="color: black;"></i>
+              </a>
               |
-              <a
-                href="https://www.linkedin.com/in/aletya"
-                target="_blank"
-                class="project-link"
-                >LinkedIn</a
-              >
+              <a href="https://www.linkedin.com/in/aletya" target="_blank" class="project-link">
+                <i class="fa fa-linkedin fa-lg" style="color: black;"></i>
+              </a>
               |
-              <a
-                href="mailto:alexyang.swe@gmail.com"
-                target="_blank"
-                class="project-link"
-                >Email</a
-              >
+              <a href="mailto:alexyang.swe@gmail.com" target="_blank" class="project-link">
+                <i class="fa fa-envelope fa-lg" style="color: black;"></i>
+              </a>
             </strong>
           </div>
         </div>
@@ -112,21 +102,15 @@
               </div>
               <ul class="responsibilities">
                 <li>
-                  Implemented a robust data processing pipeline using
-                  Python-based <strong>AWS Lambda</strong> functions to stream
-                  data from <strong>S3</strong> to <strong>DynamoDB</strong>,
-                  enabling efficient processing and storage of large files
-                  without overwhelming the system
+                  Benchmarking various ML models to optimize contact times, enhancing customer engagement and timely payments
                 </li>
                 <li>
-                  Engineered a data synchronization and visualization framework
-                  utilizing <strong>DynamoDB</strong> and
-                  <strong>OpenSearch</strong>, providing rich visualizations and
-                  dashboard for data analysts
+                  Establishing reproducible training workflows, optimizing performance and ensuring consistency in machine learning
+model training and deployment processes by leveraging Kubeflow, Kubernetes, and Snowflake
                 </li>
                 <li>
-                  Engineered a comprehensive UI with SSO access management, file
-                  uploads, complex requests, and auditing capabilities
+                  Implementing robust pipelines for the API infrastructure, enabling access to the ML model and implementing features
+such as auto-failover and rollback deployment
                 </li>
               </ul>
             </div>
@@ -159,17 +143,17 @@
               </div>
               <ul class="responsibilities">
                 <li>
-                  Deployed API servers on <strong>EC2</strong> with
-                  <strong>ZERO</strong> downtime during updates by implementing
+                  Deployed API servers on EC2 with
+                  ZERO downtime during updates by implementing
                   a blue-green deployment strategy
                 </li>
                 <li>
                   Developed robust CI/CD pipelines for the API using
-                  <strong>Code Deploy</strong>, <strong>Code Pipeline</strong>,
-                  and <strong>Github Actions</strong>
+                  Code Deploy, Code Pipeline,
+                  and Github Actions
                 </li>
                 <li>
-                  Achieved <strong>96.55%</strong> branch coverage, ensuring
+                  Achieved 96.55% branch coverage, ensuring
                   reliable, seamless CI/CD by developing a testing framework
                   using Jest
                 </li>
@@ -208,15 +192,13 @@
                   signature hackathon using Express.js and Node.js
                 </li>
                 <li>
-                  Reduced costs by <strong>98.5%</strong> by redesigning
-                  database schemas, building CI/CD pipelines, and streamlining
-                  internal test suites
+                  Reduced costs by 98.5% by transitioning from a microservice architecture to a monolith architecture and redesigning database schemas
                 </li>
                 <li>
-                  Achieved a <strong>99% </strong>reduction in bandwidth usage
+                  Achieved a 99% reduction in bandwidth usage
                   for storing/viewing applicants' resumes by developing a
                   service to facilitate user-specific uploads/downloads to
-                  <strong>S3</strong>
+                  S3
                 </li>
               </ul>
             </div>
@@ -378,7 +360,7 @@
           <h3>File Hosting Application</h3>
           <p><em>C</em></p>
           <p>
-            Developed a TCP based client-server application allowing users to host/share files on a public server.
+            Developed a TCP-based client-server application for hosting and sharing files on a public server.
           </p>
           <p>
             <a
@@ -428,7 +410,7 @@
             "
           />
           <h3>Ecosystem Simulation</h3>
-          <p><em>HTML/CSS, JavaScript</em></p>
+          <p><em>JavaScript, HTML/CSS</em></p>
           <p>
             A traditional simulation of foxes and rabbits to illustrate the
             interaction between predators and prey.
@@ -462,7 +444,7 @@
             "
           />
           <h3>Personal Website</h3>
-          <p><em>HTML/CSS, JavaScript</em></p>
+          <p><em>JavaScript, HTML/CSS</em></p>
           <p>This website is written in pure HTML/CSS and JavaScript.</p>
         </div>
       </div>
