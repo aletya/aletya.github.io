@@ -133,10 +133,10 @@ $color-pink: #fe4365; */
 
 .speech-bubble-text {
   transform: translatey(0px);
-  animation: float 5s ease-in-out infinite;
+  /* animation: float 5s ease-in-out infinite; */
 
   text-align: center;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: bold;
   letter-spacing: 3px;
   font-size: 15px;

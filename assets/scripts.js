@@ -1,29 +1,29 @@
 // Typewriter created by Tameem Safi.
 // source: https://github.com/tameemsafi/typewriterjs
 
-var typewriter = document.getElementById("typewritter");
+// var typewriter = document.getElementById("typewritter");
 
-var typewriter = new Typewriter(typewriter, {
-  loop: true,
-  delay: 50,
-  deleteSpeed: 5,
-});
+// var typewriter = new Typewriter(typewriter, {
+//   loop: true,
+//   delay: 50,
+//   deleteSpeed: 5,
+// });
 
-typewriter
-  .typeString("Hi there!")
-  .pauseFor(500)
-  .typeString(
-    " I'm Alex, a rising junior studying Computer Science at the University of Illinois Urbana-Champaign.",
-  )
-  .pauseFor(1000)
-  .typeString(
-    "<br><br>I'm highly interested in infrastructure, distributed systems, database design, and algorithm design.",
-  )
-  .pauseFor(1000)
-  .typeString("<br><br>Thanks for stopping by!")
-  .pauseFor(1000000)
-  .deleteAll(2)
-  .start();
+// typewriter
+//   .typeString("Hi there!")
+//   .pauseFor(500)
+//   .typeString(
+//     " I'm Alex, a rising junior studying Computer Science at the University of Illinois Urbana-Champaign.",
+//   )
+//   .pauseFor(1000)
+//   .typeString(
+//     "<br><br>I'm highly interested in infrastructure, distributed systems, database design, and algorithm design.",
+//   )
+//   .pauseFor(1000)
+//   .typeString("<br><br>Thanks for stopping by!")
+//   .pauseFor(1000000)
+//   .deleteAll(2)
+//   .start();
 
 window.onscroll = function () {
   if (window.scrollY > 660) {
